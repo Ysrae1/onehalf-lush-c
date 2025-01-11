@@ -33,9 +33,9 @@ M.dark = {
   red     = "#e06c75",
   green   = "#98c379",
   yellow  = "#e5c07b",
-  blue    = "#61afef",
+  blue    = "#70bfff",
   purple  = "#c678dd",
-  cyan    = "#106A79",
+  cyan    = "#105069",
   white   = "#dcdfe4",
 
   comment_fg  = "#5c6370",
