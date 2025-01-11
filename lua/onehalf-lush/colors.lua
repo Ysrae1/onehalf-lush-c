@@ -9,7 +9,7 @@ M.light = {
   yellow      = "#c18401",
   blue        = "#0184bc",
   purple      = "#a626a4",
-  cyan        = "#0997b3",
+  cyan        = "#aeeafa",
   white       = "#fafafa",
 
   comment_fg  = "#a0a1a7",
@@ -35,7 +35,7 @@ M.dark = {
   yellow  = "#e5c07b",
   blue    = "#61afef",
   purple  = "#c678dd",
-  cyan    = "#56b6c2",
+  cyan    = "#40a5b7",
   white   = "#dcdfe4",
 
   comment_fg  = "#5c6370",
