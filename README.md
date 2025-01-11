@@ -1,78 +1,9 @@
-One half for neovim
-===
+# MyCustomOneHalfLush
 
-A light and dark colorscheme for neovim.
+`MyCustomOneHalfLush` is a customized version of [CodeGradox's onehalf-lush](https://github.com/CodeGradox/onehalf-lush). This version has been optimized in terms of colors and styles based on personal preferences. The main modification is the adjustment of the cyan color used as the background color for LspReference in both light and dark modes, which enhances readability.
 
-![Colorscheme preview](docs/preview.png)
+## Acknowledgements
 
-This theme is based on the [One half](https://github.com/sonph/onehalf) color scheme. I have made some slight modifications to suit my personal preferences. I mainly program in Ruby, so the styling will be adjusted to make Ruby syntax look good.
+This color scheme is a modification based on `onehalf-lush` originally developed by `CodeGradox`. I extend my gratitude to [CodeGradox](https://github.com/CodeGradox) for their excellent contribution to the community.
 
-Make sure you have neovim 0.8 with treesitter installed.
-
-# Installation
-
-Install the colorscheme with your favorite plugin manager.
-
-```lua
--- Lazy
-return {
-  "CodeGradox/onehalf-lush",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    vim.api.nvim_set_option("background", "light")
-    vim.cmd("colorscheme onehalf-lush")
-  end
-}
-
--- Packer
-return require("packer").startup(function()
-  use "CodeGradox/onehalf-lush"
-end)
-
-
-vim.api.nvim_set_option("background", "light")
-vim.cmd("colorscheme onehalf-lush")
-```
-
-# Set up the theme
-
-Select between light and dark theme.
-
-```lua
--- Set the color scheme.
-vim.api.nvim_set_option("background", "light")
-vim.cmd("colorscheme onehalf-lush")
-
--- Set the dark colorscheme
-vim.api.nvim_set_option("background", "dark")
-vim.cmd("colorscheme onehalf-lush-dark")
-```
-
-You can enable better syntax highlight with the following line.
-
-```lua
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false,
-  },
-}
-```
-
-# Lualine
-
-There is also a theme for lualine. Note that the colors are determined by the value of `vim.opt.background`. I may fix this in the future, if I can figure out how.
-
-```lua
-require("lualine").setup {
-  options = {
-    theme = "onehalf-lush"
-  }
-}
-
-```
-
-# Credits
-
-This package was originally written to be compatible with Lush. When the Lush template stopped working, the plugin was rewritten to work without Lush. I have copied [mofiguls](http://github.com/mofiqul) vscode plugin to get the hightlight groups, so credits to them for making it possible to easily extend their colorscheme.
+Original project link: [CodeGradox/onehalf-lush](https://github.com/CodeGradox/onehalf-lush)
